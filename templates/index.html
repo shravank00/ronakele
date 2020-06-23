@@ -1,0 +1,260 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="{% static 'images/logo.png' %}">
+  <title>RONAK ELECTRICALS</title>
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap-dropdownhover.min.css'%}" rel="stylesheet"> 
+  <link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet">
+  <link href="{% static 'css/coustom.css' %}" rel="stylesheet">
+  <link href="{% static 'css/camera.css'%}" rel="stylesheet">
+
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    
+</head>
+
+    
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+         
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <div class="logo">
+                <a href="{% url 'index1'%}">
+                  <img class="img-responsive" src="{% static 'images/preview.jpg' %}">
+                 
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+
+              <form action="http://www.kunaimpex.com/search-product" method="post" class="search-form">
+               <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" name="search" id="search" class="form-control input-md" placeholder="Please enter keywords" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-md" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            </form>
+
+
+
+
+
+
+              <!-- <div class="social-top pull-right"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="clearfix"></div>
+
+<div class="menu-main">
+
+              <nav class="navbar navbar-inverse" role="navigation">
+              <div class="container">
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button> <a class="navbar-brand" href="#">MENU</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
+                  <ul class="nav navbar-nav">
+                                   
+                    <li class="  "> <a href="{% url 'index1'%}" >Home</a>                        </li>
+                                      
+                    <li class=" "> <a href="{% url 'company'%}" >Profile</a>                        </li>
+                                      
+                    <li class=" "> <a href="{% url 'salesservice' %}" >Sales & Services</a>                        </li>
+                                      
+                    
+                    <li class=" "> <a href="{% url 'Products' %}" >Products</a>                        </li>                 
+                   
+                    <li class=""> <a href="{% url 'download' %}" >Download</a> 
+                                        </li>
+                                      
+                    <li class=" "> <a href="{% url 'news' %}" >News</a>                        </li>
+                                      
+                    <li class=" "> <a href="{% url 'contactus' %}" >Contact Us</a>                        </li>
+                                                </ul>
+                </div>
+                    </div> 
+              </nav>
+      
+          </div> 
+         
+
+
+  
+      </div>
+{%block content%}    
+      <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                                            <div data-src="{% static 'synergyframe/config/resources/system/upload/leopanelstarter.jpg'%}"></div>
+                                            <div data-src="{% static 'synergyframe/config/resources/system/upload/leoauto.jpg'%}"></div>
+                                            <div data-src="{% static 'synergyframe/config/resources/system/upload/bkmotor.jpg'%}"></div>
+                                            
+                                    </div>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-mian">
+      
+      <div class="welcome-sections">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="welcome-back">
+       
+                  <div class="titel-heading">
+                    <h2>Welcome to <span>RONAK ELECTRICALS.</span></span></h2>
+                  </div>
+                  <p>
+                  <strong> RONAK ELECTRICALS</strong> was started in the year 1998 and then started business in this field and now it is distributor of many brands like <strong>ABM INSTRUMENT, </strong><strong>LEO ,</strong><strong>BK DEEPAK</strong> and <strong>SONTUNE.</strong></p>
+
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="treatment-main">
+          <div class="treatment-service">
+            <div class="container">
+            <div class="row responsive-col-2">
+
+        <div class="clearfix"></div>
+       {%for company in companys%}
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="single-image service-box-main">
+              <div class="service-icon">
+                <h3><a href="/items/{{company.id}}"><p>{{company.Company_name}}</p></a></h3>
+                 </div>
+                 <div class="service-product">
+                <img class="imgb" src="{{company.Company_img.url}}">
+                    
+             
+            </div>
+           
+            <!--<div class="right-companey-logo">  
+                          <a href="#"> <img src="{% static 'synergyframe/config/resources/system/upload/1088342257.png'%}" alt="//"></a> 
+             </div>-->
+
+            </div>
+          </div>
+          {%endfor%}
+        </div>
+        </div>
+        </div>
+        </div>
+                    
+
+{%endblock%}
+
+  <div class="clearfix"></div>
+       <div class="footer">
+      
+      <div class="container">
+        <div class="footer-logo">
+          <h3><img class="flogo" src="{% static 'images/logo.jpg' %}"></h3>
+        </div>
+        
+        <div class="reserved text-center">
+          <div class="social-top"> 
+          <!--<a href="https://www.facebook.com/kuna.impex"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="http://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     <a href="https://myaccount.google.com/profile"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                     <a href="https://www.youtube.com/channel/UCbp1-MqJFXcFAfYkkimGteQ"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> -->
+          </div>
+          <div class="tel-buttom"> <span><i class="fa fa-phone" aria-hidden="true"></i> <a href="tell:079 22155819 ">079 22155819</a> </span>
+            <span> <i class="fa fa-envelope " aria-hidden="true"></i><a href="mailto:dheerajdave44@gmail.com">dheerajdave44@gmail.com</a></span>
+          </div>
+          <p>© RONAK ELECTRACALS - 2020 All Rights Reserved</p>
+                  </div>
+      </div>
+    </div>
+      <div>
+           <a id="back-to-top" href="#" class="btn btn-primary btn-md back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        
+      </div>
+
+
+     
+
+
+    
+
+ 
+
+
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap-dropdownhover.js' %}"></script>
+      <script type='text/javascript' src='{% static "js/jquery.mobile.customized.min.js"%}'></script>
+      <script type='text/javascript' src='{% static "js/jquery.easing.1.3.js" %}'></script>
+      <script type='text/javascript' src='{% static "js/camera.min.js" %}'></script>
+      <script src="{% static 'js/my-jquery.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from www.kunaimpex.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jun 2020 07:05:00 GMT -->
+</html>

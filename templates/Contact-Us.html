@@ -1,0 +1,168 @@
+{%extends 'index.html'%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    
+</head>
+
+    
+<body>
+    {%block content%}
+      <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div>
+                                          <img class="img-responsive " src="{% static 'synergyframe/config/resources/system/upload/555823861.jpg' %}" alt="Contact-Us">
+                                      </div>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="">
+  <div class="container ">
+  <div class="ineer-pages ">
+
+    <div class="ineer-pages-img ">
+     
+          <div class="row ">
+          <div class="col-md-12 ">
+       <div class="ineer-page-taital "> 
+    <div class="ineer-page-tex ">
+    <h3>Contact Us</h3>
+    </div> 
+    </div>
+ </div>
+
+<div class="container ">
+  
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ">
+    <div class="title ">
+    <div class="lined "> <h3>Contact Us</h3></div>
+     
+          </div>
+          <p>
+            We would be glad to have feedback from you. Drop us a line, whether it is a comment, a question, a work proposition or just a hello. You can use either the form below or the contact details on the right.
+          </p>
+
+
+      <form method="post" action="" onsubmit="return allcheck();">
+        {% csrf_token %}
+      <div class="row ">
+  <div class="form-group col-sm-6 ">
+    <label for="name ">Name*</label>
+    <input type="text" class="form-control " id="name" name="name" placeholder="Name" required="">
+  </div>
+  <div class="form-group col-sm-6 ">
+        <label for="txtemail">Email Address*</label>
+    <input type="email" class="form-control" name="txtemail" id="txtemail" placeholder="Email Address" required="">
+  </div>
+
+  </div>
+
+   <div class="row ">
+  <div class="form-group col-sm-6 ">
+    <label for="exampleInputCompany1">Company Name</label>
+    <input type="text" class="form-control " name="Company" id="exampleInputCompany1" placeholder="Company Name ">
+  </div>
+  <div class="form-group col-sm-6 ">
+        <label for="exampleInputContact1">Contact Number</label>
+    <input type="number" class="form-control " name="Contact" id="exampleInputContact1" placeholder="Contact Number" required="">
+  </div>
+
+  </div>
+
+   <div class="row ">
+  <div class="form-group col-sm-6 ">
+
+  </div>
+
+  </div>
+
+
+
+   <div class="row ">
+     <div class="form-group col-sm-12 ">
+<textarea class="form-control " rows="4" name="Message" id="Message" placeholder="Message* "required></textarea>
+</div>
+</div>
+
+  
+
+  <button type="submit" class="btn btn-success ">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+         
+        
+   
+
+
+
+
+
+
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+  <div class="title ">
+           <div class="lined "> <h3>Contact Info</h3></div>
+          </div>
+          <ul class="b-list b-contact ">
+            <li class="contact-address "><i class="fa fa-map-marker "></i><span><strong>Address:</strong>207, Shreeji Complex,
+Opp.Union Bank, Gandhi Road,
+AHMEDABAD-380 001. GUJARAT (INDIA) </span></li>
+            <li class="contact-phone "><i class="fa fa-mobile " aria-hidden="true "></i><span><strong>Phone:</strong> <a href="tal:079 22155819">079 22155819</a> 
+                   </span></li>
+            <li class="contact-mail "><i class="fa fa-envelope " aria-hidden="true "></i><strong>E-mail:</strong> <a href="mailto:Dheerajdave44@gmail.com">Dheerajdave44@gmail.com
+            </a></li>
+           <!--  <li class="contact-address "><i class="fa fa-clock-o " aria-hidden="true "></i><span><strong>Business Hours:</strong></span>
+            </li> -->
+          </ul>
+          <div class="title ">
+            
+
+           <!-- <div class="lined "> <h3>Follow Us</h3></div>
+          </div>
+          <div class="social-top "> 
+          <a href="https://www.facebook.com/kuna.impex"><i class="fa fa-facebook" aria-hidden="true "></i></a>
+                    <a href="http://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true "></i></a>
+                    <a href="https://myaccount.google.com/profile"><i class="fa fa-google-plus" aria-hidden="true "></i></a>
+                    <a href="https://www.youtube.com/channel/UCbp1-MqJFXcFAfYkkimGteQ"><i class="fa fa-youtube" aria-hidden="true "></i></a>
+                              
+                    </div>
+                  -->
+</div>
+
+</div>     
+ </div>
+ 
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+      <div class="clearfix"></div>
+
+
+{%endblock%}
+
+</body>
+
+
+</html>

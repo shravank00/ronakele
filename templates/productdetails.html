@@ -1,0 +1,73 @@
+{%extends 'index.html'%}
+{%load static%}
+{% static "media/media" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    
+</head>
+
+    
+<body>
+   
+{%block content%}
+      <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div>
+                                          <img class="img-responsive " style="height: 200px; width:100%;" src="{% static 'synergyframe/config/resources/system/upload/leo.jpg' %}" alt="LEO">
+                                      </div>
+                          </div>
+          </div>
+        </div>
+	  </div>
+	  <br />
+    </div>
+
+
+    <div class="container">
+	<div class="ineer-pages">
+		<div class="product-detele">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<br>
+				<div class="img-hover-div">
+					<img id="myImg" class="img-responsive thumbnail" src="{{product.Item_img.url}}" alt="INVERTERS">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+						<div class="img-close"> <span class="close">×</span>
+						</div>
+						<img class="modal-content" id="img01">
+						<div id="caption"></div>
+					</div>
+				</div>
+			</div> 
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+				<h2> {{product.Item_name}}</h2>
+				<ul class="breadcrumb">
+					<li><a href="/index1">Home</a>
+					</li>					<li><a href="/Products">Products</a>
+					</li></ul>
+				<div class="produc-box-inn">
+					<h4>
+	{{product.Company_id}}</h4>
+						<h5>Description</h5>
+            <p>{{product.Range}}
+              <br />
+              {{product.Description}}
+
+            </p>
+				</div>
+			</div>
+		
+<div class="clearfix"></div>
+
+
+
+{%endblock%}
+ </body>
+
+
+</html>

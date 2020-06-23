@@ -1,0 +1,106 @@
+{%extends 'index.html'%}
+{%load static%}
+{% static "media/media" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+ 
+    
+</head>
+
+    
+<body>
+{%block content%}
+  <!--<div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div>
+                                          <img class="img-responsive " src="synergyframe/config/resources/system/upload/158113682.jpg" alt="Products">
+                                      </div>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="container">
+  <div class="ineer-pages">
+    <div class="inner-content-area">
+      <div class="tdcinner-product">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">  
+                 <div class="title">
+      <div class="lined ">
+        <h3>Products</h3>
+      </div>
+    </div>
+   
+        <div class="mt20 mb20 responsive-col-2">   
+          
+            {%for company in companys%}
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-ineer-box mb20">
+            <div class="products-box text-center">
+              <div class="padding-all-10">
+                          <img class="imgp" src="{{company.Company_img.url}}" alt="" height="80%" width="85%">
+              
+              </div>
+              <div class="products-box-color">
+                <h4>{{company.Company_name}}</h4>
+              </div>
+
+              <div class="mt20 mb20">
+         <div class="read_more btn">
+
+          <form method="POST" action="/items/{{ company.id }}">
+            {% csrf_token %}
+           <input type="submit" value="Read More" class="read_more btn" style="color: white;"> 
+          </form>
+                    </div>
+                    </div>
+                   
+              <div class="network-border"></div>
+
+            </div>
+          </div>  {%endfor%}
+          </div></div>
+
+
+     
+      </div>
+
+
+
+</div>
+</div>
+
+
+
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  <div class="clearfix"></div>
+{%endblock%}
+  </body>
+
+
+</html>
